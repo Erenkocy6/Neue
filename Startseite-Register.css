@@ -1,0 +1,457 @@
+body {
+    background-color: #000;
+}
+
+/* Schatten hinter den Karten */
+.shadow-wrapper {
+    position: relative;
+    display: inline-block;
+    flex: 0 0 auto;
+}
+
+.shadow-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #c600ff, #7200ff);
+    border-radius: 30px;
+    z-index: -1;
+}
+
+/* Karten */
+.custom-card {
+    background-color: #1c1c1c;
+    border-radius: 30px;
+    width: 500px;
+    min-height: 640px;
+}
+
+/* Input-Felder */
+.custom-input {
+    background-color: #000;
+    border: 2px solid #7200ff;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 16px;
+}
+.custom-input::placeholder {
+    color: #fff;
+    opacity: 0.8;
+}
+.custom-input:focus {
+    border-color: #b366ff;
+    box-shadow: none;
+}
+
+/* Link (wird nur verwendet falls gebraucht) */
+.link-accent {
+    color: #c600ff;
+    text-decoration: none;
+}
+.link-accent:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.btn-gradient {
+    background: linear-gradient(to right, #c600ff, #7200ff);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    width: 125px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-gradient:hover {
+    background: linear-gradient(to right, #c600ff, #7200ff);
+}
+
+/* Abstand zwischen den beiden Karten */
+.shadow-wrapper + .shadow-wrapper {
+    margin-left: 10rem;
+}
+
+/* Extra Abstand unter Passwort-Reihe */
+.extra-gap {
+    margin-bottom: 70px;
+}
+.btn {
+    border-radius: 12px; !important;
+}
+
+/* Allgemein */
+body {
+    background-color: #000000;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Buttons */
+.btn-purple {
+    background-color: #a500ff;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.btn-purple:hover {
+    background-color: #9100e6;
+}
+
+/* Hero-Bereich */
+.highlight-section {
+    padding-top: 180px;
+    padding-bottom: 800px; /* mehr Platz nach unten */
+    background-image:
+            linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, #000 100%),
+            url('Bilder/ArcadeHomepage.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.highlight-section::after {
+    content: "";
+    position: absolute;
+    bottom: -200px;   /* verschiebt Verlauf weiter nach unten */
+    left: 0;
+    width: 100%;
+    height: 700px;     /* genug Höhe für sanften Verlauf */
+    background: linear-gradient(
+            to bottom,
+            rgba(10, 0, 21, 0) 0%,
+            rgba(10, 0, 21, 0.4) 25%,
+            rgba(10, 0, 21, 0.7) 60%,
+            #000000 100%
+    );
+    z-index: 2;
+    pointer-events: none;
+}
+
+
+.hero-card {
+    background: rgba(60, 0, 100, 0.75); /* dunkleres Lila */
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 3rem;
+    text-align: center;
+    color: white;
+    z-index: 3;
+    max-width: 520px;
+    backdrop-filter: blur(4px);
+}
+
+.hero-glow-card {
+    box-shadow:
+            0 0 20px rgba(210, 0, 255, 0.6),
+            0 0 40px rgba(180, 0, 255, 0.5),
+            0 0 60px rgba(180, 0, 255, 0.3);
+}
+
+.neon-button {
+    box-shadow:
+            0 0 10px rgba(195, 0, 255, 0.8),
+            0 0 20px rgba(195, 0, 255, 0.6),
+            0 0 30px rgba(195, 0, 255, 0.4);
+    border-radius: 12px;
+    font-weight: bold;
+    padding: 10px 20px;
+    min-width: 140px;
+}
+
+
+.btn-purple {
+    background-color: #c300ff;
+    color: white;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.btn-purple:hover {
+    background-color: #a000d8;
+}
+
+.hero-buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hero-buttons .btn {
+    min-width: 140px;
+}
+
+/* Überschrift Cards-Bereich */
+.section-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* Cards Overlap – hebt sie über den Verlauf */
+.cards-overlap {
+    margin-top: -120px;
+    position: relative;
+    z-index: 5;
+}
+
+/* Produktübersicht Cards */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 100px; /* Abstand nach unten */
+    column-gap: 80px; /* Abstand zur Seite */
+    margin-bottom: 100px; /* extra Platz nach unten */
+}
+
+.product-card {
+    background-color: #1c1c1c;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    width: 320px;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.product-body {
+    padding: 1.5rem;
+    text-align: left;
+    color: white;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.profile-pic {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    border: none !important;
+    display: block !important;
+}
+
+
+
+.stars {
+    color: #a500ff;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.price-tag {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.product-body h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-body p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.welcome-banner {
+    background-image: url('Bilder/HomepageBanner.png'); /* Pfad anpassen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.welcome-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.welcome-text p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.beliebte-produkte-section {
+    margin-top: 100px; /* oder 120px, je nach gewünschtem Abstand */
+}
+
+.help-section {
+    background-color: #000;
+}
+
+.custom-help-box {
+    background-color: #15141f;
+    border: 2px solid #b800ff;
+    border-radius: 14px;
+    padding: 40px 30px;
+    max-width: 1100px;
+    box-shadow: 0 0 20px #b800ff88;
+    color: white;
+}
+
+.custom-accordion {
+    background-color: transparent;
+    border: none;
+}
+
+.custom-accordion .accordion-button {
+    background-color: #b800ff;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: none;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+    background-color: #a000e0;
+    color: white;
+}
+
+.custom-accordion .accordion-body {
+    background-color: #1d1c28;
+    color: white;
+    border-radius: 0 0 6px 6px;
+}
+
+.contact-info i {
+    color: #b800ff;
+}
+
+.contact-info span {
+    color: white;
+}
+
+.contact-icon {
+    font-size: 40px;
+    color: #b800ff; /* pink-lila */
+    margin-bottom: 8px;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-text {
+    font-size: 16px;
+    color: white;
+    margin: 0;
+}
+
+
+
+@media (max-width: 768px) {
+    .custom-help-box {
+        padding: 30px 15px;
+    }
+}
+
+.Dashboard-Page {
+    height: 100vh;
+    overflow: hidden; /* verhindert Scrollen */
+}
+
+
+
+
+.admin-dashboard {
+    display: flex;
+    height: 100%;
+    background: linear-gradient(to bottom, #0a0a0a, #1a1a1a);
+}
+
+
+.dashboard-logo {
+    width: 60px;
+    height: auto;
+}
+
+.dashboard-sidebar {
+    background: linear-gradient(to bottom, #29002b, #14001a);
+    width: 220px;
+}
+
+.btn-sidebar {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: linear-gradient(to right, #a500ff, #6f00ff);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    padding: 0.6rem 1.2rem;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-sidebar:hover {
+    background: linear-gradient(to right, #6f00ff, #a500ff);
+    transform: scale(1.02);
+}
+
+
+
+.dashboard-main {
+    background: #0a0a0a;
+    color: white;
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+.dashboard-card {
+    background: #2a2a38;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 20px #a500ff20;
+    height: 100%;
+}
+
+.dashboard-header {
+    background: linear-gradient(to right, #2b0054, #40007c);
+    height: 70px;
+}
+
+
+

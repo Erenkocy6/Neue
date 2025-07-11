@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Nostify</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="client.js"></script>
+    <link rel="stylesheet" href="Startseite-Register.css">
+    <link rel="stylesheet" href="Profil%20und%20Über%20usw.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" defer></script>
+</head>
+<body>
+
+<header class="custom-header d-flex align-items-center justify-content-between px-4">
+    <nav>
+        <a href="startseite.html" class="logo-link">
+            <img src="Bilder/Logo.png" alt="Logo" class="logo-image"/>
+        </a>
+    </nav>
+    <div class="menu-box d-flex align-items-center px-5">
+        <div class="d-flex align-items-center gap-5">
+            <a href="#" class="header-nav-link" data-page="marktplatz">Marktplatz</a>
+            <a href="#" class="header-nav-link">Verkaufen</a>
+            <a href="#" class="header-nav-link">Chats</a>
+            <div roclass="ms-5">
+                <button id="btn-login" class=" btn btn-gradient ms-5 ">Login</button>
+                <button id="btn-register" class="btn btn-gradient ms-5">Registrieren</button>
+            </div>
+        </div>
+        <div class="d-flex align-items-center ms-auto">
+            <i class="bi bi-cart4"></i>
+            <i class="bi bi-person-circle"></i>
+        </div>
+    </div>
+</header>
+
+<section class="Startseite-Page">
+    <section class="highlight-section d-flex justify-content-end align-items-start px-5 pt-5">
+        <div class="hero-card hero-glow-card position-absolute top-0 end-0 mt-5 me-5">
+            <h1 class="mb-4">
+                Deine Konsole.<br>
+                Deine Erinnerung.<br>
+                Deine Entscheidung.
+            </h1>
+            <div class="d-flex justify-content-center gap-4 hero-buttons">
+                <button class="btn btn-purple neon-button">Kaufen</button>
+                <button class="btn btn-outline-light text-white neon-button">Verkaufen</button>
+            </div>
+        </div>
+    </section>
+    <div class="container product-overview cards-overlap text-center">
+        <h2 class="mb-5 section-title text-white">Highlights</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="Bilder/HighlightP1.png" alt="Produktbild">
+                <div class="product-body">
+                    <div class="product-rating d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="Bilder/Highlightprofilbild.png" alt="Profilbild" class="profile-pic">
+                            <span class="stars">★★★★☆</span>
+                        </div>
+                        <span class="price-tag">150€</span>
+                    </div>
+                    <h5>Super Mario Kart</h5>
+                    <p>Original N64 Super Mario 64 Spiel im gebrauchten Zustand</p>
+                    <div class="text-center mt-3">
+                        <button class="btn btn-purple">Ansehen</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="Bilder/HighlightP2.png" alt="Produktbild">
+                <div class="product-body">
+                    <div class="product-rating d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="Bilder/Highlightprofilbild.png" alt="Profilbild" class="profile-pic">
+                            <span class="stars">★★★★☆</span>
+                        </div>
+                        <span class="price-tag">30€</span>
+                    </div>
+                    <h5>Super Mario 64</h5>
+                    <p>Original N64 Super Mario 64 Spiel im gebrauchten Zustand</p>
+                    <div class="text-center mt-3">
+                        <button class="btn btn-purple">Ansehen</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="Bilder/HighlightP3.png" alt="Produktbild">
+                <div class="product-body">
+                    <div class="product-rating d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="Bilder/Highlightprofilbild.png" alt="Profilbild" class="profile-pic">
+                            <span class="stars">★★★★☆</span>
+                        </div>
+                        <span class="price-tag">200€</span>
+                    </div>
+                    <h5>Super Nintendo</h5>
+                    <p>Originaler Super Nintendo mit 2 Spielen.</p>
+                    <div class="text-center mt-3">
+                        <button class="btn btn-purple">Ansehen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="welcome-banner">
+        <div class="welcome-text">
+            <h2><strong>Willkommen bei Nostify</strong></h2>
+            <p>Von Gamer zu Gamer. Hier verkaufen Privatpersonen original Retro-Konsolen, Spiele und Zubehör direkt an
+                andere Fans.</p>
+        </div>
+    </section>
+    <div class="container product-overview cards-overlap text-center beliebte-produkte-section">
+        <h2 class="mb-5 section-title text-white">Beliebte Produkte</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="Bilder/BeliebtP1.png" alt="Produktbild">
+                <div class="product-body">
+                    <div class="product-rating d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="Bilder/Highlightprofilbild.png" alt="Profilbild" class="profile-pic">
+                            <span class="stars">★★★★☆</span>
+                        </div>
+                        <span class="price-tag">150€</span>
+                    </div>
+                    <h5>Super Mario Kart</h5>
+                    <p>Original N64 Super Mario 64 Spiel im gebrauchten Zustand</p>
+                    <div class="text-center mt-3">
+                        <button class="btn btn-purple">Ansehen</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="Bilder/BeliebtP2.png" alt="Produktbild">
+                <div class="product-body">
+                    <div class="product-rating d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="Bilder/Highlightprofilbild.png" alt="Profilbild" class="profile-pic">
+                            <span class="stars">★★★★☆</span>
+                        </div>
+                        <span class="price-tag">30€</span>
+                    </div>
+                    <h5>Super Mario 64</h5>
+                    <p>Original N64 Super Mario 64 Spiel im gebrauchten Zustand</p>
+                    <div class="text-center mt-3">
+                        <button class="btn btn-purple">Ansehen</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="Bilder/BeliebtP3.png" alt="Produktbild">
+                <div class="product-body">
+                    <div class="product-rating d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="Bilder/Highlightprofilbild.png" alt="Profilbild" class="profile-pic">
+                            <span class="stars">★★★★☆</span>
+                        </div>
+                        <span class="price-tag">200€</span>
+                    </div>
+                    <h5>Super Nintendo</h5>
+                    <p>Originaler Super Nintendo mit 2 Spielen.</p>
+                    <div class="text-center mt-3">
+                        <button class="btn btn-purple">Ansehen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="help-section container-fluid py-5 mt-5">
+        <div class="custom-help-box mx-auto px-4 py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="accordion" id="verkaufAccordion">
+                        <div class="accordion-item custom-accordion mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq1">
+                                    Wie verkaufe ich einen Artikel?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#verkaufAccordion">
+                                <div class="accordion-body">
+                                    1. Klicke auf „Verkaufen“. <br>
+                                    2. Lade Bilder hoch und beschreibe dein Produkt. <br>
+                                    3. Stelle es online – fertig!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item custom-accordion mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq2">
+                                    Wie funktioniert der Versand?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#verkaufAccordion">
+                                <div class="accordion-body">
+                                    Der Verkäufer wählt Versandart und trägt die Kosten.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item custom-accordion">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq3">
+                                    Was kostet mich das?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#verkaufAccordion">
+                                <div class="accordion-body">
+                                    Die Nutzung von Nostify ist kostenlos für private Verkäufer.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center gap-5 flex-wrap text-center mt-5 mt-md-0">
+                    <div class="icon-box">
+                        <i class="bi bi-telephone-fill contact-icon"></i>
+                        <p class="icon-text">0800 - 334488 111</p>
+                    </div>
+                    <div class="icon-box">
+                        <i class="bi bi-envelope-fill contact-icon"></i>
+                        <p class="icon-text">kontakt@nostify.de</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</section>
+<section class="Login-Page">
+    <div class="container my-5">
+        <div class="row justify-content-center g-4">
+            <div class="col-md-5">
+                <section class="shadow-wrapper h-100">
+                    <div class="custom-card p-4 d-flex flex-column h-100">
+                        <h2 class="text-center mb-4">Registrieren</h2>
+                        <form id="formInput" class="d-flex flex-column flex-fill">
+                            <!-- Vorname & Nachname -->
+                            <div class="row g-3 mb-3">
+                                <div class="col">
+                                    <input type="text" class="form-control custom-input" placeholder="Vorname"
+                                           id="firstname" name="firstname" required/>
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control custom-input" placeholder="Nachname"
+                                           id="lastname" name="lastname" required/>
+                                </div>
+                            </div>
+                            <!-- Email -->
+                            <div class="mb-3">
+                                <input type="email" class="form-control custom-input" placeholder="Email" id="email"
+                                       name="email" required/>
+                            </div>
+                            <!-- Passwort & Passwort wiederholen -->
+                            <div class="row g-3 extra-gap">
+                                <div class="col">
+                                    <input type="password" class="form-control custom-input" placeholder="Passwort"
+                                           id="password" name="password" required/>
+                                </div>
+                                <div class="col">
+                                    <input type="password" class="form-control custom-input"
+                                           placeholder="Passwort wiederholen" id="passwordRepeat" name="passwordRepeat"
+                                           required/>
+                                </div>
+                            </div>
+                            <!-- Straße und Hausnummer -->
+                            <div class="mb-3">
+                                <input type="text" class="form-control custom-input" placeholder="Straße und Hausnummer"
+                                       id="address" name="address" required/>
+                            </div>
+                            <!-- Stadt & PLZ -->
+                            <div class="row g-3 mb-3">
+                                <div class="col">
+                                    <input type="text" class="form-control custom-input" placeholder="Stadt" id="city"
+                                           name="city" required/>
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control custom-input" placeholder="PLZ/Ort" id="zip"
+                                           name="zip" required/>
+                                </div>
+                            </div>
+                            <!-- Telefonnummer -->
+                            <div class="mb-4">
+                                <input type="tel" class="form-control custom-input" placeholder="Telefonnummer"
+                                       id="phone" name="phone" required/>
+                            </div>
+                            <!-- Feedback -->
+                            <div id="registerOutput" class="text-center mb-3"></div>
+                            <!-- Button -->
+                            <div class="mt-auto text-center">
+                                <button type="submit" class="btn btn-gradient">Registrieren</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-5">
+                <section class="shadow-wrapper h-100">
+                    <div class="custom-card p-4 d-flex flex-column h-100">
+                        <h2 class="text-center mb-4">Anmelden</h2>
+                        <form id="loginForm" class="d-flex flex-column flex-fill">
+                            <div>
+                                <!-- E-Mail -->
+                                <div class="mb-3">
+                                    <input
+                                            type="email"
+                                            class="form-control custom-input"
+                                            placeholder="E-Mail"
+                                            id="loginEmail"
+                                            name="email"
+                                            required
+                                    />
+                                </div>
+                                <!-- Passwort -->
+                                <div class="mb-3">
+                                    <input
+                                            type="password"
+                                            class="form-control custom-input"
+                                            placeholder="Passwort"
+                                            id="loginPassword"
+                                            name="password"
+                                            required
+                                    />
+                                </div>
+                                <!-- Passwort vergessen -->
+                                <div class="mb-3 text-end">
+                                    <a href="#" class="text-white text-decoration-none">Passwort vergessen?</a>
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <div class="mt-5 text-center">
+                                <button type="submit" class="btn btn-gradient">Login</button>
+                            </div>
+                            <div id="loginOutput" class="mt-3 text-center"></div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Profil-Page">
+    <div class="container py-5">
+        <div class="row g-4 align-items-start flex-wrap">
+            <div class="col-md-auto d-flex justify-content-center justify-content-md-start px-4">
+                <div class="profile-image-wrapper">
+                    <div class="outer-border"></div>
+                    <img src="Bilder/HighlightP1.png" alt="Profilbild" class="profile-image" id="profil-bild">
+                </div>
+            </div>
+            <div class="col px-4">
+                <div class="form-wrapper d-flex flex-column justify-content-between w-100 form-wrapper-height">
+                    <!-- Zeile 1 -->
+                    <div class="row gx-5">
+                        <div class="col-md-3">
+                            <input type="text" id="profil-vorname" class="form-control" placeholder="Vorname">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" id="profil-nachname" class="form-control" placeholder="Nachname">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row gx-2">
+                                <div class="col">
+                                    <input type="text" id="profil-strasse" class="form-control"
+                                           placeholder="Straße und Nr">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Zeile 2 -->
+                    <div class="row gx-5">
+                        <div class="col-md-6">
+                            <input type="email" id="profil-email" class="form-control" placeholder="E-Mail">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row gx-2">
+                                <div class="col-auto">
+                                    <input type="text" id="profil-plz" class="form-control input-postcode"
+                                           placeholder="PLZ">
+                                </div>
+                                <div class="col">
+                                    <input type="text" id="profil-stadt" class="form-control" placeholder="Stadt">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Zeile 3 -->
+                    <div class="row gx-5">
+                        <div class="col-md-6">
+                            <input type="password" id="profil-passwort" class="form-control" placeholder="Passwort">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="profil-telefon" class="form-control" placeholder="Telefonnummer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-5 align-items-center px-4">
+            <!-- Linker Bereich: Bewertung + Logout + Icon -->
+            <div class="col-md-6 d-flex justify-content-start align-items-center">
+                <button class="btn btn-purple btn-bewertung">Bewertung</button>
+                <!-- neu: Logout-Button -->
+                <button id="btn-logout" class="btn btn-purple btn-bewertung ms-2">Logout</button>
+                <i class="bi bi-chat-left-text icon-chat ms-2"></i>
+            </div>
+
+            <div class="col-md-6 d-flex justify-content-end align-items-center">
+                <i class="bi bi-pencil icon-pencil"></i>
+                <button class="btn btn-purple btn-dashboard dashboard-btn">Dashboard</button>
+            </div>
+            <div class="form-divider"></div>
+        </div>
+    </div>
+    <div class="container mt-4 position-relative">
+        <button class="add-button"><i class="fas fa-plus"></i></button>
+        <div class="section-title">Produktübersicht</div>
+        <div class="row g-4 mt-2">
+            <div class="col-md-3">
+                <div class="info-card d-flex flex-column align-items-center justify-content-center gap-2">
+                    <div class="text-center">
+                        <p class="mb-1">Mitglied seit <strong>2019</strong></p>
+                        <p class="stars mb-2">★★★★★</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fa fa-truck fa-2x mb-1"></i>
+                        <p class="mb-1">(203)</p>
+                        <p class="mb-0">Bewertungen <strong>(143)</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card position-relative">
+                    <!-- Entfernen-Button -->
+                    <button class="btn btn-outline-light position-absolute top-0 end-0 m-2"
+                            onclick="this.closest('.col-md-3').remove()">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                    <img src="Bilder/HighlightP1.png"/>
+                    <div class="card-body">
+                        <div class="rating-bar">
+                            <span class="stars">★★★★☆</span>
+                            <span class="price-tag">250€</span>
+                        </div>
+                        <h5 class="mt-2">PlayStation 2 mit Spiele</h5>
+                        <p>Konsole mit Controller, Kabel & Spiele. Funktioniert Einwandfrei.</p>
+                        <div class="text-center mt-3">
+                            <button class="btn btn-purple px-4">Ansehen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="product-card position-relative">
+                    <!-- Entfernen-Button -->
+                    <button class="btn btn-outline-light position-absolute top-0 end-0 m-2"
+                            onclick="this.closest('.col-md-3').remove()">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                    <img src="Bilder/HighlightP1.png"/>
+                    alt="PS2">
+                    <div class="card-body">
+                        <div class="rating-bar">
+                            <span class="stars">★★★★☆</span>
+                            <span class="price-tag">250€</span>
+                        </div>
+                        <h5 class="mt-2">PlayStation 2 mit Spiele</h5>
+                        <p>Konsole mit Controller, Kabel & Spiele. Funktioniert Einwandfrei.</p>
+                        <div class="text-center mt-3">
+                            <button class="btn btn-purple px-4">Ansehen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card position-relative">
+                    <!-- Entfernen-Button -->
+                    <button class="btn btn-outline-light position-absolute top-0 end-0 m-2"
+                            onclick="this.closest('.col-md-3').remove()">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                    <img src="Bilder/HighlightP1.png"/>
+                    <div class="card-body">
+                        <div class="rating-bar">
+                            <span class="stars">★★★★☆</span>
+                            <span class="price-tag">250€</span>
+                        </div>
+                        <h5 class="mt-2">PlayStation 2 mit Spiele</h5>
+                        <p>Konsole mit Controller, Kabel & Spiele. Funktioniert Einwandfrei.</p>
+                        <div class="text-center mt-3">
+                            <button class="btn btn-purple px-4">Ansehen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-4">
+        <a href="#" class="btn btn-outline-light rounded-pill">
+            <i class="fas fa-arrow-down me-2"></i> Alle Produkte ansehen
+        </a>
+    </div>
+    <div class="container mt-5">
+        <div class="section-title">Bewertungen</div>
+        <div class="row g-4">
+            <!-- Bewertung 1 -->
+            <div class="col-md-6">
+                <div class="review-card">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg"
+                                 class="rounded-circle me-2" width="35" height="35">
+                            <strong>Mark Wettmann</strong>
+                        </div>
+                        <a href="#" class="text-white text-decoration-none"><i
+                                class="fa-solid fa-triangle-exclamation"></i> Melden</a>
+                    </div>
+                    <p>Ich bin super zufrieden mit meinem Kauf! Der Controller kam gut verpackt und
+                        schneller als erwartet bei mir an.<br>Er funktioniert einwandfrei und sieht aus wie
+                        neu.</p>
+                    <p class="stars mb-1">★★★★★</p>
+                    <small class="text-muted">geschrieben am 12.12.12</small>
+                    <div class="mt-3">
+                        <input type="text" class="form-control border-2 mb-2"
+                               placeholder="Antworten eingeben..."
+                               style="border-color:#a500ff; background-color:#111; color:#fff;"
+                               onfocus="this.placeholder=''"
+                               onblur="this.placeholder='Antworten eingeben...'" id="replyInput1">
+                        <button class="btn btn-purple btn-sm"
+                                onclick="submitReply('replyInput1', 'replyOutput1')">Antwort abschicken
+                        </button>
+                    </div>
+
+                    <!-- Antwortanzeige -->
+                    <div id="replyOutput1" class="reply-output mt-3 text-white fw-normal"></div>
+
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="review-card">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg"
+                                 class="rounded-circle me-2" width="35" height="35">
+                            <strong>Mark Wettmann</strong>
+                        </div>
+                        <a href="#" class="text-white text-decoration-none"><i
+                                class="fa-solid fa-triangle-exclamation"></i> Melden</a>
+                    </div>
+                    <p>Ich bin super zufrieden mit meinem Kauf! Der Controller kam gut verpackt und
+                        schneller als erwartet bei mir an.<br>Er funktioniert einwandfrei und sieht aus wie
+                        neu.</p>
+                    <p class="stars mb-1">★★★★★</p>
+                    <small class="text-muted">geschrieben am 12.12.12</small>
+
+                    <!-- Antwortformular -->
+                    <div class="mt-3">
+                        <input type="text" class="form-control border-2 mb-2"
+                               placeholder="Antworten eingeben..."
+                               style="border-color:#a500ff; background-color:#111; color:#fff;"
+                               onfocus="this.placeholder=''"
+                               onblur="this.placeholder='Antworten eingeben...'" id="replyInput2">
+                        <button class="btn btn-purple btn-sm"
+                                onclick="submitReply('replyInput2', 'replyOutput2')">Antwort abschicken
+                        </button>
+                    </div>
+
+                    <!-- Antwortanzeige -->
+                    <div id="replyOutput2" class="reply-output mt-3 text-white fw-normal"></div>
+
+                </div>
+            </div>
+
+
+            <!-- Bewertung 3 -->
+            <div class="col-md-6">
+                <div class="review-card">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg"
+                                 class="rounded-circle me-2" width="35" height="35">
+                            <strong>Mark Wettmann</strong>
+                        </div>
+                        <a href="#" class="text-white text-decoration-none"><i
+                                class="fa-solid fa-triangle-exclamation"></i> Melden</a>
+                    </div>
+                    <p>Ich bin super zufrieden mit meinem Kauf! Der Controller kam gut verpackt und
+                        schneller als erwartet bei mir an.<br>Er funktioniert einwandfrei und sieht aus wie
+                        neu.</p>
+                    <p class="stars mb-1">★★★★★</p>
+                    <small class="text-muted">geschrieben am 12.12.12</small>
+
+                    <!-- Antwortformular -->
+                    <div class="mt-3">
+                        <input type="text" class="form-control border-2 mb-2"
+                               placeholder="Antworten eingeben..."
+                               style="border-color:#a500ff; background-color:#111; color:#fff;"
+                               onfocus="this.placeholder=''"
+                               onblur="this.placeholder='Antworten eingeben...'" id="replyInput3">
+                        <button class="btn btn-purple btn-sm"
+                                onclick="submitReply('replyInput3', 'replyOutput3')">Antwort abschicken
+                        </button>
+                    </div>
+                    <div id="replyOutput3" class="reply-output mt-3 text-white fw-normal"></div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="review-card">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg"
+                                 class="rounded-circle me-2" width="35" height="35">
+                            <strong>Mark Wettmann</strong>
+                        </div>
+                        <a href="#" class="text-white text-decoration-none"><i
+                                class="fa-solid fa-triangle-exclamation"></i> Melden</a>
+                    </div>
+                    <p>Ich bin super zufrieden mit meinem Kauf! Der Controller kam gut verpackt und
+                        schneller als erwartet bei mir an.<br>Er funktioniert einwandfrei und sieht aus wie
+                        neu.</p>
+                    <p class="stars mb-1">★★★★★</p>
+                    <small class="text-muted">geschrieben am 12.12.12</small>
+                    <div class="mt-3">
+                        <input type="text" class="form-control border-2 mb-2"
+                               placeholder="Antworten eingeben..."
+                               style="border-color:#a500ff; background-color:#111; color:#fff;"
+                               onfocus="this.placeholder=''"
+                               onblur="this.placeholder='Antworten eingeben...'" id="replyInput4">
+                        <button class="btn btn-purple btn-sm"
+                                onclick="submitReply('replyInput4', 'replyOutput4')">Antwort abschicken
+                        </button>
+                    </div>
+                    <div id="replyOutput4" class="reply-output mt-3 text-white fw-normal"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-4">
+        <a href="#" class="btn btn-outline-light rounded-pill">
+            <i class="fas fa-comments me-2"></i> Alle Bewertungen anzeigen
+        </a>
+    </div>
+</section>
+
+
+<section class="Überuns-Page">
+    <div class="container mt-5">
+        <div class="text-center">
+            <h2 class="fw-bold">Über Uns</h2>
+            <p class="bg-dark px-4 py-2 d-inline-block rounded-pill">Nostify ist die C2C Plattform für
+                retro-Gaming Liebhaber</p>
+        </div>
+
+        <div class="row text-center mt-5">
+            <!-- Feature 1 -->
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-coins fa-4x mb-3" style="color:#a500ff;"></i>
+                <div class="bg-dark px-3 py-3 rounded-4">
+                    <h5 class="fw-bold">Retro Gaming erschwinglich machen</h5>
+                    <p class="mb-0">Wir setzen uns dafür ein, dass klassische Spiele und Konsolen für jeden
+                        zugänglich sind.</p>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-desktop fa-4x mb-3" style="color:#a500ff;"></i>
+                <div class="bg-dark px-3 py-3 rounded-4">
+                    <h5 class="fw-bold">Eine Community aufbauen</h5>
+                    <p class="mb-0">Wir fördern den Austausch und die Vernetzung von Retro-Gaming-Fans
+                        weltweit.</p>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-globe-europe fa-4x mb-3" style="color:#a500ff;"></i>
+                <div class="bg-dark px-3 py-3 rounded-4">
+                    <h5 class="fw-bold">Nachhaltigkeit fördern</h5>
+                    <p class="mb-0">Wir verlängern die Lebensdauer von Spielen und Konsolen durch einen
+                        nachhaltigen Kreislauf.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-purple px-4">Jetzt Registrieren</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Impressum-Page">
+    <div class="container mt-5">
+        <div class="text-start">
+            <h3 class="fw-bold bg-dark px-4 py-2 d-inline-block rounded-pill">Impressum</h3>
+            <p class="mt-4">
+                Angaben gemäß § 5 TMG<br>
+                <strong>Nostify</strong><br>
+                Max Mustermann<br>
+                Musterstraße 12<br>
+                12345 Musterstadt<br>
+                Deutschland
+            </p>
+
+            <p>
+                <strong>Kontakt:</strong><br>
+                Telefon: +49 (0)123 456789<br>
+                E-Mail: kontakt@nostify.de<br>
+                Website: <a href="https://www.nostify.de" class="text-decoration-none text-white">www.nostify.de</a>
+            </p>
+
+            <p>
+                Umsatzsteuer-ID: 080056464<br>
+                Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE123456789
+            </p>
+
+            <p>
+                <strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br>
+                Max Mustermann<br>
+                Musterstraße 12<br>
+                12345 Musterstadt
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<section class="AGB-Page">
+    <div class="container mt-5">
+        <h3 class="fw-bold bg-dark px-4 py-2 d-inline-block rounded-pill">AGB`s</h3>
+        <p class="mt-4">
+            <strong>Allgemeine Geschäftsbedingungen (AGB) von Nostify</strong>
+        </p>
+        <p>
+            1. Geltungsbereich<br>
+            Diese Allgemeinen Geschäftsbedingungen gelten für die Nutzung der Online-Plattform "Nostify"...
+        </p>
+        <p>
+            2. Leistungsbeschreibung<br>
+            Nostify stellt eine technische Plattform zur Verfügung, über die Nutzer Inserate aufgeben...
+        </p>
+        <p>
+            3. Registrierung und Nutzerkonto<br>
+            (1) Zur Nutzung der Plattform ist eine Registrierung erforderlich.<br>
+            (2) Nutzer müssen bei der Registrierung wahrheitsgemäße Angaben machen....
+        </p>
+        <!-- ... Weiter mit Punkten 4 bis 12 ... -->
+    </div>
+</section>
+
+<section class="Datenschutz-Page">
+    <div class="container mt-5">
+        <h3 class="fw-bold bg-dark px-4 py-2 d-inline-block rounded-pill">Datenschutz</h3>
+        <p class="mt-4">
+            <strong>1. Allgemeine Hinweise</strong><br>
+            Der Schutz Ihrer persönlichen Daten ist uns, der nostify GmbH, ein besonderes Anliegen....
+        </p>
+        <p>
+            <strong>2. Verantwortlicher</strong><br>
+            Nostify GmbH<br>
+            Musterstraße 1<br>
+            12345 Musterstadt<br>
+            012345678<br>
+            mustermann@gmail.com<br>
+            Thorben – CEO<br>
+            Eren – CPO<br>
+            Produkt und Design<br>
+            Meter – CTO<br>
+            Tech & Entwicklung<br>
+            Fabian – CTO<br>
+            Tech & Entwicklung<br>
+            Mark – CMO<br>
+            Marketing & Community<br>
+            Jordani – CFO<br>
+            Finanzen & Business
+        </p>
+        <p>
+            <strong>3. Erhebung und Speicherung personenbezogener Daten</strong><br>
+            ... IP-Adresse, Uhrzeit des Zugriffs, Referrer-URL etc.
+        </p>
+        <p>
+            <strong>4. Cookies</strong><br>
+            Unsere Website verwendet Cookies. ...
+        </p>
+        <p>
+            <strong>5. Kontaktformular / Kommunikation</strong><br>
+            Wenn Sie uns per Kontaktformular oder E-Mail kontaktieren ...
+        </p>
+        <p>
+            <strong>6. Analyse-Tools (z. B. Google Analytics)</strong><br>
+            ...
+        </p>
+        <p>
+            <strong>7. Ihre Rechte</strong><br>
+            Sie haben das Recht: auf Auskunft gemäß Art. 15 DSGVO, ...
+        </p>
+        <p>
+            <strong>Letzte Aktualisierung:</strong> 24.06.2025
+        </p>
+    </div>
+</section>
+
+<section class="Marktplatz-Page py-5">
+    <div class="container">
+        <h2 class="section-title mb-4">Marktplatz</h2>
+        <!-- Oberer Filterbereich -->
+        <div class="row mb-4 g-3">
+            <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Suche...">
+            </div>
+            <div class="col-md-2">
+                <select class="form-control">
+                    <option>Produkttyp</option>
+                    <option>Konsole</option>
+                    <option>Spiele</option>
+                    <option>Zubehör</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <select class="form-control">
+                    <option>Zustand</option>
+                    <option>Neu</option>
+                    <option>Gebraucht</option>
+                    <option>Defekt</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <select class="form-control">
+                    <option>Plattform</option>
+                    <option>Nintendo</option>
+                    <option>Playstation</option>
+                    <option>Sega</option>
+                    <option>Atari</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-purple w-100">
+                    <i class="bi bi-funnel"></i> Filter anwenden
+                </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar: Filter -->
+            <div class="col-md-3">
+                <div class="bg-dark text-white p-3 rounded">
+                    <h5 class="mb-3">Filter</h5>
+                    <!-- Produkttyp -->
+                    <div class="mb-3">
+                        <label class="small">Produkttyp</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Konsole" id="filterKonsole">
+                            <label class="form-check-label" for="filterKonsole">Konsole</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Spiele" id="filterSpiele">
+                            <label class="form-check-label" for="filterSpiele">Spiele</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Zubehör" id="filterZubehoer">
+                            <label class="form-check-label" for="filterZubehoer">Zubehör</label>
+                        </div>
+                    </div>
+                    <!-- Zustand -->
+                    <div class="mb-3">
+                        <label class="small">Zustand</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Neu" id="filterNeu">
+                            <label class="form-check-label" for="filterNeu">Neu</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Gebraucht" id="filterGebraucht">
+                            <label class="form-check-label" for="filterGebraucht">Gebraucht</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Defekt" id="filterDefekt">
+                            <label class="form-check-label" for="filterDefekt">Defekt</label>
+                        </div>
+                    </div>
+                    <!-- Plattform -->
+                    <div class="mb-3">
+                        <label class="small">Plattformen</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Nintendo" id="filterNintendo">
+                            <label class="form-check-label" for="filterNintendo">Nintendo</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Playstation" id="filterPlaystation">
+                            <label class="form-check-label" for="filterPlaystation">Playstation</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Sega" id="filterSega">
+                            <label class="form-check-label" for="filterSega">Sega</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Atari" id="filterAtari">
+                            <label class="form-check-label" for="filterAtari">Atari</label>
+                        </div>
+                    </div>
+                    <!-- Preis -->
+                    <div class="mb-3">
+                        <label class="small">Preis von/bis</label>
+                        <div class="d-flex gap-2">
+                            <input type="number" class="form-control form-control-sm" placeholder="ab">
+                            <input type="number" class="form-control form-control-sm" placeholder="bis">
+                        </div>
+                    </div>
+                    <!-- Zusätzliche Filter -->
+                    <div class="mb-3">
+                        <label class="small">Weitere Filter</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="filterSchnell">
+                            <label class="form-check-label" for="filterSchnell">Schnellantworter</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="filterTop">
+                            <label class="form-check-label" for="filterTop">Top Bewertung</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="filterNeuDabei">
+                            <label class="form-check-label" for="filterNeuDabei">Neu dabei</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="filterMehrArtikel">
+                            <label class="form-check-label" for="filterMehrArtikel">Hat mehrere Artikel</label>
+                        </div>
+                    </div>
+                    <button class="btn btn-purple w-100 mt-2">
+                        <i class="bi bi-funnel"></i> Filter anwenden
+                    </button>
+                </div>
+            </div>
+            <!-- Produktliste -->
+            <div class="col-md-9">
+                <div class="product-card-long d-flex align-items-center bg-dark rounded p-3 mb-3">
+                    <img src="Bilder/HighlightP1.png" alt="Tomb Raider 2" class="product-img-long me-3">
+                    <div class="flex-grow-1">
+                        <h5 class="text-white mb-1">Tomb Raider 2</h5>
+                        <p class="text-muted mb-1 small">Original Tomb Raider 2 Spiel</p>
+                        <p class="text-muted mb-1 small">Gebraucht – voll funktionsfähig</p>
+                        <p class="text-muted mb-1 small">Standort: Berlin</p>
+                    </div>
+                    <div class="text-end ms-3" style="min-width:120px;">
+                        <h6 class="text-white mb-3">49,99 €</h6>
+                        <button class="btn btn-purple btn-sm w-100">
+                            <i class="bi bi-cart4 me-1"></i> In den Warenkorb
+                        </button>
+                    </div>
+                </div>
+                <!-- Weitere Produktkarten hier kopieren -->
+                <div class="product-card-long d-flex align-items-center bg-dark rounded p-3 mb-3">
+                <img src="Bilder/HighlightP1.png" alt="Playstation 2" class="product-img-long me-3">
+                <div class="flex-grow-1">
+                    <h5 class="text-white mb-1">Playstation 2</h5>
+                    <p class="text-muted mb-1 small">Konsole mit 2 Controllern</p>
+                    <p class="text-muted mb-1 small">Gebraucht – einwandfrei</p>
+                    <p class="text-muted mb-1 small">Standort: Hamburg</p>
+                </div>
+                <div class="text-end ms-3" style="min-width:120px;">
+                    <h6 class="text-white mb-3">90,00 €</h6>
+                    <button class="btn btn-purple btn-sm w-100">
+                        <i class="bi bi-cart4 me-1"></i> In den Warenkorb
+                    </button>
+                </div>
+            </div>
+                <div class="product-card-long d-flex align-items-center bg-dark rounded p-3 mb-3">
+                    <img src="Bilder/HighlightP1.png" alt="Playstation 2" class="product-img-long me-3">
+                    <div class="flex-grow-1">
+                        <h5 class="text-white mb-1">Playstation 2</h5>
+                        <p class="text-muted mb-1 small">Konsole mit 2 Controllern</p>
+                        <p class="text-muted mb-1 small">Gebraucht – einwandfrei</p>
+                        <p class="text-muted mb-1 small">Standort: Hamburg</p>
+                    </div>
+                    <div class="text-end ms-3" style="min-width:120px;">
+                        <h6 class="text-white mb-3">90,00 €</h6>
+                        <button class="btn btn-purple btn-sm w-100">
+                            <i class="bi bi-cart4 me-1"></i> In den Warenkorb
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="Dashboard-Page" style="display: none;">
+    <header class="custom-header d-flex align-items-center justify-content-between px-4 dashboard-header">
+        <!-- Links: Logo -->
+        <nav>
+            <a href="#" class="logo-link">
+                <img src="Bilder/Logo.png" alt="Logo" class="logo-image"/>
+            </a>
+        </nav>
+
+        <!-- Mitte: Titel -->
+        <h1 class="text-white m-0 fs-4 fw-bold">DASHBOARD</h1>
+
+        <!-- Rechts: Profil-Icon -->
+        <div class="d-flex align-items-center ms-auto">
+            <i class="bi bi-person-circle" id="dashboard-profile-icon"></i>
+        </div>
+    </header>
+
+
+    <!-- Dashboard Bereich -->
+    <div class="admin-dashboard d-flex">
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar d-flex flex-column align-items-start justify-content-start p-4" style="min-height: 100vh;">
+            <nav class="d-flex flex-column gap-3 mt-4">
+                <button class="btn btn-sidebar" data-page="dashboard">
+                    <i class="bi bi-bar-chart fs-5"></i>
+                    <span>Dashboard</span>
+                </button>
+                <button class="btn btn-sidebar" data-page="benutzer">
+                    <i class="bi bi-people fs-5"></i>
+                    <span>Benutzer</span>
+                </button>
+                <button class="btn btn-sidebar" data-page="artikel">
+                    <i class="bi bi-box-seam fs-5"></i>
+                    <span>Artikel</span>
+                </button>
+                <button class="btn btn-sidebar" data-page="kommentare">
+                    <i class="bi bi-chat-left-text fs-5"></i>
+                    <span>Gemeldete Bewertungen</span>
+                </button>
+                <button class="btn btn-sidebar" data-page="gemeldeteArtikel">
+                    <i class="bi bi-exclamation-triangle fs-5"></i>
+                    <span>Gemeldete Artikel</span>
+                </button>
+            </nav>
+        </aside>
+        <!-- Main Content -->
+        <main class="dashboard-main flex-fill p-5">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="dashboard-card text-center">
+                        <svg width="220" height="220">
+                            <circle cx="110" cy="110" r="90" stroke="#222" stroke-width="20" fill="none"/>
+                            <circle cx="110" cy="110" r="90" stroke="#a500ff" stroke-width="20" fill="none"
+                                    stroke-dasharray="565" stroke-dashoffset="237"
+                                    stroke-linecap="round" transform="rotate(-90 110 110)"/>
+                            <text x="50%" y="50%" text-anchor="middle" fill="#a500ff" font-size="24px" dy=".3em">58.00%</text>
+                        </svg>
+                        <p class="mt-3 text-white fw-bold">Verkäufer auf der Plattform in Prozent</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="dashboard-card text-center">
+                        <canvas id="salesChart" width="300" height="200"></canvas>
+                        <p class="mt-3 text-white fw-bold">Verkäufe in der letzten Woche</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</section>
+
+<section class="Benutzer-Page" style="display: none;">
+    <!-- Admin-Header vom Dashboard übernommen -->
+    <header class="custom-header d-flex align-items-center justify-content-between px-4 dashboard-header">
+        <nav>
+            <a href="#" class="logo-link">
+                <img src="Bilder/Logo.png" alt="Logo" class="logo-image" />
+            </a>
+        </nav>
+
+        <h1 class="text-white m-0 fs-4 fw-bold">BENUTZER</h1>
+
+        <div class="d-flex align-items-center ms-auto">
+            <i class="bi bi-person-circle" id="benutzer-profile-icon" style="cursor: pointer;"></i>
+        </div>
+    </header>
+
+    <div class="admin-dashboard d-flex">
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar p-4 d-flex flex-column align-items-start justify-content-start">
+            <nav class="d-flex flex-column gap-3 w-100">
+                <button class="btn btn-sidebar" data-page="dashboard">
+                    <i class="bi bi-bar-chart fs-5"></i>
+                    <span>Dashboard</span>
+                </button>
+                <button class="btn btn-sidebar" data-page="benutzer">
+                    <i class="bi bi-people fs-5"></i>
+                    <span>Benutzer</span>
+                </button>
+                <button class="btn btn-sidebar" data-page="artikel">
+                    <i class="bi bi-box-seam"></i> Artikel
+                </button>
+                <button class="btn btn-sidebar" data-page="kommentare">
+                    <i class="bi bi-chat-left-text"></i> Gemeldete Bewertungen
+                </button>
+                <button class="btn btn-sidebar" data-page="gemeldeteArtikel">
+                    <i class="bi bi-exclamation-triangle"></i> Gemeldete Artikel
+                </button>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main flex-fill p-5">
+            <!-- Benutzertabelle -->
+            <div class="table-responsive">
+                <table class="table table-bordered text-white">
+                    <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Vorname</th>
+                        <th>Nachname</th>
+                        <th>E-Mail</th>
+                        <th>Rolle</th>
+                        <th>Aktionen</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Emma</td>
+                        <td>Fischer</td>
+                        <td>emma.fischer@demo.de</td>
+                        <td>Admin</td>
+                        <td>
+                            <button class="btn btn-sm btn-primary">Bearbeiten</button>
+                            <button class="btn btn-sm btn-danger">Löschen</button>
+                        </td>
+                    </tr>
+                    <!-- weitere Zeilen dynamisch -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</section>
+
+
+
+
+<footer class="custom-footer d-flex align-items-center justify-content-between px-4">
+    <a href="startseite.html" class="logo-link">
+        <img src="Bilder/Logo2.png" alt="Logo" class="footer-logo-image"/>
+    </a>
+    <div class="nav-icons-container d-flex flex-column align-items-center justify-content-center">
+        <nav class="d-flex justify-content-center">
+            <a href="#" class="footer-nav-link m-4" data-page="impressum">Impressum</a>
+            <a href="#" class="footer-nav-link m-4" data-page="agb">AGB</a>
+            <a href="#" class="footer-nav-link m-4" data-page="ueberuns">Über Uns</a>
+            <a href="#" class="footer-nav-link m-4" data-page="datenschutz">Datenschutz</a>
+        </nav>
+        <div class="bottom d-flex justify-content-center mt-2 gap-3">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-discord"></i>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
