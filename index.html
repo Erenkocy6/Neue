@@ -425,7 +425,7 @@
         </div>
     </div>
     <div class="container mt-4 position-relative">
-        <button class="add-button"><i class="fas fa-plus"></i></button>
+        <button class="add-button" id="open-product-detail"><i class="fas fa-plus"></i></button>
         <div class="section-title">Produktübersicht</div>
         <div class="row g-4 mt-2">
             <div class="col-md-3">
@@ -655,6 +655,24 @@
         <a href="#" class="btn btn-outline-light rounded-pill">
             <i class="fas fa-comments me-2"></i> Alle Bewertungen anzeigen
         </a>
+    </div>
+</section>
+
+<!-- Produktdetailseite -->
+<section class="Produktdetail-Page" id="produktdetail-page" style="display: none;">
+    <div class="container py-5">
+        <button id="back-to-profile" class="btn btn-outline-light mb-4">Zurück zum Profil</button>
+        <div class="row g-4 align-items-start">
+            <div class="col-md-6 text-center">
+                <img id="detail-image" src="Bilder/HighlightP1.png" class="img-fluid rounded" alt="Produktbild">
+            </div>
+            <div class="col-md-6">
+                <h2 id="detail-title" class="text-white">Beispiel Produkt</h2>
+                <p id="detail-description" class="text-white-50">Ausführliche Beschreibung des Produkts. Zustand, Besonderheiten und weitere Informationen können hier stehen.</p>
+                <h4 id="detail-price" class="text-white mt-3">99,00 €</h4>
+                <button class="btn btn-purple mt-3">In den Warenkorb</button>
+            </div>
+        </div>
     </div>
 </section>
 

@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
         ueberuns: document.querySelector('.Überuns-Page') as HTMLElement,
         dashboard: document.querySelector('.Dashboard-Page') as HTMLElement,
         benutzer: document.querySelector('.Benutzer-Page') as HTMLElement,
-        marktplatz: document.querySelector('.Marktplatz-Page') as HTMLElement
+        marktplatz: document.querySelector('.Marktplatz-Page') as HTMLElement,
+        produktdetail: document.querySelector('.Produktdetail-Page') as HTMLElement
     };
 
     const header = document.querySelector('header') as HTMLElement;
@@ -107,6 +108,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Produktdetailseite öffnen/schließen
+    const addBtn = document.getElementById('open-product-detail');
+    const backBtn = document.getElementById('back-to-profile');
+    addBtn?.addEventListener('click', () => showPage('produktdetail'));
+    backBtn?.addEventListener('click', () => showPage('profile'));
 
     const fillProfile = (user: any) => {
         const map: Record<string, string> = {
